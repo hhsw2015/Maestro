@@ -98,7 +98,7 @@ jreleaser {
         description.set("The easiest way to automate UI testing for your mobile app")
         links {
             homepage.set("https://maestro.mobile.dev")
-            bugTracker.set("https://github.com/mobile-dev-inc/maestro/issues")
+            bugTracker.set("https://github.com/hhsw2015/maestro/issues")
         }
         authors.set(listOf("Dmitry Zaytsev", "Amanjeet Singh", "Leland Takamine", "Arthur Saveliev", "Axel Niklasson", "Berik Visschers"))
         license.set("Apache-2.0")
@@ -119,7 +119,7 @@ jreleaser {
 
             release {
                 github {
-                    repoOwner.set("mobile-dev-inc")
+                    repoOwner.set("hhsw2015")
                     name.set("maestro")
                     tagName.set("cli-$CLI_VERSION")
                     releaseName.set("CLI $CLI_VERSION")
@@ -133,7 +133,7 @@ jreleaser {
                         content.set("""
                             [See changelog in the CHANGELOG.md file][link]
 
-                            [link]: https://github.com/mobile-dev-inc/maestro/blob/main/CHANGELOG.md#{{changelogVersionHeader}}
+                            [link]: https://github.com/hhsw2015/maestro/blob/main/CHANGELOG.md#{{changelogVersionHeader}}
                         """.trimIndent()
                         )
                     }
@@ -152,7 +152,7 @@ jreleaser {
             templateDirectory.set(file("src/jreleaser/distributions/maestro/brew"))
 
             repoTap {
-                repoOwner.set("mobile-dev-inc")
+                repoOwner.set("hhsw2015")
                 name.set("homebrew-tap")
             }
 
